@@ -1,0 +1,14 @@
+type,name,scope,range,dim
+loop,RAST2,rasterization2,Variable
+loop,ZCULLING_INIT_ROW,zculling,256
+loop,ZCULLING_INIT_COL,zculling,256
+loop,ZCULLING,zculling,Variable
+loop,COLORING_FB_INIT_ROW,coloringFB,256
+loop,COLORING_FB_INIT_COL,coloringFB,256
+loop,COLORING_FB,coloringFB,Variable
+loop,OUTPUT_FB_ROW,output_FB,256
+loop,OUTPUT_FB_COL,output_FB,256
+array,fragment,rendering,500,0
+array,pixels,rendering,500,0
+array,frame_buffer,rendering,256,0
+array,frame_buffer,rendering,256,1
