@@ -1,0 +1,9 @@
+set_directive_pipeline rasterization2/RAST2
+
+
+set_directive_pipeline zculling/ZCULLING
+set_directive_unroll -factor 64 coloringFB/COLORING_FB_INIT_ROW
+set_directive_unroll -factor 8 coloringFB/COLORING_FB_INIT_COL
+
+set_directive_pipeline output_FB/OUTPUT_FB_ROW
+set_directive_unroll -factor 8 output_FB/OUTPUT_FB_COL

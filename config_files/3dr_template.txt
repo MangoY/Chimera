@@ -5,15 +5,15 @@
 ############################################################
 open_project {{ project_name }}
 set_top {{ top_function }}
-add_files rosetta_test/src/sdsoc/rendering.cpp -cflags "-DSDSOC"
-add_files rosetta_test/src/sdsoc/rendering.h
-add_files -tb rosetta_test/src/host/3d_rendering_host.cpp
-add_files -tb rosetta_test/src/host/check_result.cpp
-add_files -tb rosetta_test/src/host/check_result.h
-add_files -tb rosetta_test/src/host/input_data.h
-add_files -tb rosetta_test/src/host/typedefs.h
-add_files -tb rosetta_test/src/host/utils.cpp
-add_files -tb rosetta_test/src/host/utils.h
+add_files hls_src/sdsoc/rendering.cpp -cflags "-DSDSOC"
+add_files hls_src/sdsoc/rendering.h
+add_files -tb hls_src/host/3d_rendering_host.cpp
+add_files -tb hls_src/host/check_result.cpp
+add_files -tb hls_src/host/check_result.h
+add_files -tb hls_src/host/input_data.h
+add_files -tb hls_src/host/typedefs.h
+add_files -tb hls_src/host/utils.cpp
+add_files -tb hls_src/host/utils.h
 open_solution "solution1"
 set_part { {{part}} }
 create_clock -period 10 -name default
